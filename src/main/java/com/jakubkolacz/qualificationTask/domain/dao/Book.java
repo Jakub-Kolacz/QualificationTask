@@ -1,7 +1,7 @@
 package com.jakubkolacz.qualificationTask.domain.dao;
 
-import com.jakubkolacz.qualificationTask.validatior.AuthorValid;
-import com.jakubkolacz.qualificationTask.validatior.group.AuthorStarts;
+import com.jakubkolacz.qualificationTask.validator.AuthorValid;
+import com.jakubkolacz.qualificationTask.validator.group.AuthorStarts;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

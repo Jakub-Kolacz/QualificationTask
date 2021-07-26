@@ -6,5 +6,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface BookService {
     Book save(Book book);
+
     Page<Book> getPage(Pageable pageable);
 }

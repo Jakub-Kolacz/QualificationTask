@@ -2,7 +2,7 @@ package com.jakubkolacz.qualificationTask.controller;
 
 import com.jakubkolacz.qualificationTask.domain.dao.Book;
 import com.jakubkolacz.qualificationTask.service.BookService;
-import com.jakubkolacz.qualificationTask.validatior.group.AuthorStarts;
+import com.jakubkolacz.qualificationTask.validator.group.AuthorStarts;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -26,10 +26,10 @@ public class BookController {
     }
 
     @GetMapping
-    public Page<Book> getBookPage(@RequestParam int page,@RequestParam int size){
-        if(bookService.getPage(PageRequest.of(page, size)).isEmpty()){
+    public Page<Book> getBookPage(@RequestParam int page, @RequestParam int size) {
+        if (bookService.getPage(PageRequest.of(page, size)).isEmpty()) {
             System.out.println("There are no books on this page, do you want to add new books?");
         }
-        return bookService.getPage(PageRequest.of(page,size));
+        return bookService.getPage(PageRequest.of(page, size));
     }
 }

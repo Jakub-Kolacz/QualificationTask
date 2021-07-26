@@ -1,6 +1,6 @@
-package com.jakubkolacz.qualificationTask.validatior;
+package com.jakubkolacz.qualificationTask.validator;
 
-import com.jakubkolacz.qualificationTask.validatior.impl.AuthorValidator;
+import com.jakubkolacz.qualificationTask.validator.impl.AuthorValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
